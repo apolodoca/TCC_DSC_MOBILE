@@ -3,7 +3,7 @@ import * as SplashScreen from 'expo-splash-screen';
 
 SplashScreen.preventAutoHideAsync();
 import {useEffect} from "react";
-import {Link} from 'expo-router';
+import {Link, router} from 'expo-router';
 
 
 // templates
@@ -15,18 +15,12 @@ import {Styles} from "../assets/Styles/styles";
 import {useFonts} from 'expo-font';
 
 export default function App() {
+    function onClick(){
+        router.push("./Entrar");
 
-  const [loaded, error] = useFonts({});
-
-  useEffect(() => {
-    if (loaded || error) {
-      SplashScreen.hideAsync();
     }
-  }, [loaded, error]);
 
-  if (!loaded && !error) {
-    return null;
-  }
+
 
 
   return (
@@ -37,8 +31,8 @@ export default function App() {
           <Text style={Styles.App.buttonText}>Cadastrar</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={Styles.App.button2}>
-          <Text style={Styles.App.buttonText}> <Link href={"./Entrar"}>Entrar</Link>
+        <TouchableOpacity style={Styles.App.button2} onPress={onClick}>
+          <Text style={Styles.App.buttonText}> Entrar
           </Text>
         </TouchableOpacity>
       </View>

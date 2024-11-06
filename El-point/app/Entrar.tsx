@@ -24,13 +24,11 @@ export default function Entrar() {
 
     });
     const onPress = function (){
-        if(email == "zipzip.Kepler@keplermail.com" && senha == "kepl123"){
-             setLink("./amostradinho")
+        if(email == "zipzip.Kepler@keplermail.com" && senha == "kepler123"){
             router.push("./zipzip");
 
         }
         else {
-            setLink("./Entrar")
             router.push("./Entrar");
         }
     };

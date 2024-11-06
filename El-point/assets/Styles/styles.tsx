@@ -74,19 +74,20 @@ export const Styles = {
 
 }),
     Entrar : StyleSheet.create({
-        InputEmail: {
-            height: 40,
+        Input: {
+
+            flex:1,
+            width: '95%',
             margin: 12,
-            borderWidth: 1,
+            borderWidth: 2,
             padding: 10,
+            fontSize:20,
+            backgroundColor: "#F1F5F4",
+            borderRadius: 25,
+            borderColor: "#474747",
+
         },
-        InputSenha: {
-            height: 40,
-            margin: 12,
-            borderWidth: 1,
-            padding: 10,
-            fontSize:20
-        }
+
 
     })
 }

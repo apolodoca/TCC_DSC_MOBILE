@@ -89,5 +89,21 @@ export const Styles = {
         },
 
 
-    })
+    }),
+    zipzip : StyleSheet.create({
+        BoaVinda :{
+            fontSize:25,
+            fontWeight:'bold',
+        },
+        Cabecalho:{
+            backgroundColor:"#515151",
+            flexDirection:"row"
+        },
+        Images:{
+            width:50,
+            height:50
+        }
+
+
+    }),
 }

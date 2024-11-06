@@ -24,7 +24,7 @@ export default function Entrar() {
 
     });
     const onPress = function (){
-        if(email == "zipzip.Kepler@keplermail.com" && senha == "kepler123"){
+        if(email == "zipzip.kepler@keplermail.com" && senha == "kepler123"){
             router.push("./zipzip");
 
         }

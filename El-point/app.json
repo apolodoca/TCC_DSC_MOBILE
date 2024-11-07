@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "El-point",
-    "slug": "El-point",
+    "slug": "el-point-tcc",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,13 +23,15 @@
       ]
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "apolo-doca"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.apolo_doca.elpointtcc"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -37,6 +39,12 @@
     "plugins": [
       "expo-font",
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6e0a4e72-10ef-4bab-a4c1-3e47743fa1b3"
+      }
+    },
+    "owner": "apolo_doca"
   }
 }

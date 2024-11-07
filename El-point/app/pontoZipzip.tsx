@@ -22,7 +22,9 @@ import {useFonts} from 'expo-font';
 
 //localização
 export const Localização = "Rua Marte, Sitio Cercado, Curitiba - PR, 81870-150, Brazil"
-
+function onPress(){
+    router.push('./Proximity');
+}
 
 export  function Clock() {
     const [currentTime, setCurrentTime] = useState(new Date());
@@ -66,6 +68,9 @@ export default function App() {
                 <Text style={[{fontSize: 25}, {fontWeight: "bold"}]}>Bater ponto</Text>
                 <Text style={[{fontSize: 25}, {fontWeight: "bold"}]}>{horario}</Text>
                 <Text style={[{fontSize: 25}, {fontWeight: "bold"}]}>Localização: {Localização}</Text>
+                <TouchableOpacity style={[Styles.App.button2, {marginTop:370, backgroundColor: "#4787EA", marginBottom: "20%"} ]} onPress={onPress}  >
+                    <Text style={Styles.App.buttonText}>Bater Ponto</Text>
+                </TouchableOpacity>
             </View>
 
         </ScrollView>

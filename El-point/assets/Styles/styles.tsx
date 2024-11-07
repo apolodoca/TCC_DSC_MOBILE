@@ -102,6 +102,10 @@ export const Styles = {
         Images:{
             width:50,
             height:50
+        },
+        Relogio:{
+          width: 300,
+          height: 300
         }
 
 

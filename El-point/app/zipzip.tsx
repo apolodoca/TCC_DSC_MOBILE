@@ -1,9 +1,9 @@
-import {Text, View, StyleSheet, Image, Button, TouchableOpacity, ScrollView, Dimensions} from 'react-native';
+import {Text, View, StyleSheet, Image, Button, TouchableOpacity,Pressable, ScrollView, Dimensions} from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 
 SplashScreen.preventAutoHideAsync();
 import {useEffect} from "react";
-import {Link} from 'expo-router';
+import {Link, router} from 'expo-router';
 
 
 // templates
@@ -18,7 +18,12 @@ export default function Zipzip() {
     const Perfil = require("../assets/images/Perfil.png")
     const Engrenagem = require("../assets/images/Engrenagem.png")
     const Ponto = require("../assets/images/Relogio.png")
+    const onPress = function (){
 
+        router.push("./pontoZipzip")
+
+
+    }
 
 
 
@@ -39,17 +44,17 @@ export default function Zipzip() {
 
 
             <View style={Styles.zipzip.Cabecalho}>
-                <View>
+                <View style={[{marginRight: "13%"}, {alignItems:"center"}, {marginLeft:20}]}>
                     <Image source={Perfil} style={Styles.zipzip.Images}></Image>
-                    <Text>PERFIL</Text>
+                    <Text style={[{fontSize : 15}, {fontWeight: "bold"}]}>PERFIL</Text>
                 </View>
-                <View>
+                <TouchableOpacity style={[{marginRight:"10%"}, {alignItems:"center"}]} onPress={onPress}>
                     <Image source={Ponto} style={Styles.zipzip.Images}></Image>
                     <Text style={[{fontSize:15}, {fontWeight:"bold"}]}>BATER PONTO</Text>
-                </View>
-                <View>
+                </TouchableOpacity>
+                <View style={{alignItems:"center"}}>
                     <Image source={Engrenagem} style={Styles.zipzip.Images}></Image>
-                    <Text>CONFIGURAÇÕES</Text>
+                    <Text style={[{fontSize : 15}, {fontWeight: "bold"}]}>CONFIGURAÇÕES</Text>
                 </View>
             </View>
         </ScrollView>

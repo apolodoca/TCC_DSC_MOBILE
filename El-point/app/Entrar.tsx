@@ -14,8 +14,8 @@ import {Styles} from "../assets/Styles/styles";
 // fonts
 import { useFonts } from 'expo-font';
 
-
-
+//zipzip.kepler@keplermail.com
+//kepler123
 export default function Entrar() {
     const [senha, setSenha] = useState('');
     const [email, setEmail] = useState('');
@@ -24,7 +24,7 @@ export default function Entrar() {
 
     });
     const onPress = function (){
-        if(email == "zipzip.kepler@keplermail.com" && senha == "kepler123"){
+        if(email == "" && senha == ""){
             router.push("./zipzip");
 
         }
@@ -53,7 +53,7 @@ export default function Entrar() {
                 <Text></Text>
 
 
-                <TouchableOpacity style={[Styles.App.button2, {marginTop:370, backgroundColor: "#4787EA"} ]} onPress={onPress}  >
+                <TouchableOpacity style={[Styles.App.button2, {marginTop:370, backgroundColor: "#4787EA", marginBottom: "20%"} ]} onPress={onPress}  >
                 <Text style={Styles.App.buttonText}>   Entrar     </Text>
             </TouchableOpacity>
         </View>

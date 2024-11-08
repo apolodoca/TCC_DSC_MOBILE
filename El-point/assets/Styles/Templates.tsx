@@ -36,6 +36,24 @@ export const Templates = {
         </View>
     )
 },
+    Sucesso : function  Sucesso() {
+        const Icon = require("../images/Sucesso.gif")
+
+        return (
+            <View style={Styles.App.appIconContainer}>
+                <Image source={Icon} style={Styles.App.appIcon}></Image>
+            </View>
+        )
+    },
+    Falha : function  Falha() {
+        const Icon = require("../images/Falha.gif")
+
+        return (
+            <View style={Styles.App.appIconContainer}>
+                <Image source={Icon} style={Styles.App.appIcon}></Image>
+            </View>
+        )
+    },
 
  Voltar : function Voltar () {
      const Back = require("../images/Back.png")

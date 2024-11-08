@@ -1,5 +1,6 @@
 {
   "expo": {
+
     "name": "El-point",
     "slug": "el-point-tcc",
     "version": "1.0.0",
@@ -38,7 +39,19 @@
     },
     "plugins": [
       "expo-font",
-      "expo-router"
+      "expo-router",
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsDownloadToken": "sk.eyJ1IjoiYXBvbG8tZG9jYSIsImEiOiJjbTM3Y240ZmowM3M2MmxvZzdic3hnbzA2In0.PMnrYTX5L8DBAKKMcx9Hwg"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Show current location on map."
+        }
+      ]
     ],
     "extra": {
       "eas": {

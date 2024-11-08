@@ -21,10 +21,10 @@ import {useFonts} from 'expo-font';
 
 
 //localização
-export const Localizacao = "Rua Marte, Sitio Cercado, Curitiba - PR, 81870-150, Brazil"
+export const Localizacao = "Colégio Estadual Leôncio Correia"
 
 function onPress(){
-    router.push('./Proximity');
+    router.push('./ProximityBill');
 }
 
 export  function Clock() {

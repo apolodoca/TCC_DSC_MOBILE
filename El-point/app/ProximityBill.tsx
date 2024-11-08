@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Button, Alert } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { useRouter } from 'expo-router';
 import * as Location from 'expo-location';
-import {Localizacao} from "./pontoZipzip";
+import {Localizacao} from "./pontoBill";
 // Replace with your actual Google Maps API Key
 const GOOGLE_MAPS_API_KEY = 'AIzaSyB_mJqAIonmuW6OBCC9Ugd1ywxApe-0VTA';
 

@@ -24,9 +24,12 @@ export default function Entrar() {
 
     });
     const onPress = function (){
-        if(email == "" && senha == ""){
+        if(email == "zipzip.kepler@keplermail.com" && senha == "kepler123"){
             router.push("./zipzip");
 
+        }
+        else if (email == "bill.bora@gmail.com" && senha == "muie_do_bill"){
+            router.push("./bill");
         }
         else {
             router.push("./Entrar");
